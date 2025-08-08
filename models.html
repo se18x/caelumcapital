@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Models - Caelum Capital</title>
+  <meta name="description" content="Explore tested trading models built by Caelum Capital including performance data, trade breakdowns, and future roadmap.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="shortcut icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="models.css" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://caelumcapital.com/models.html">
+  <meta property="og:title" content="Our Models - Caelum Capital">
+  <meta property="og:description" content="Explore tested trading models built by Caelum Capital including performance data, trade breakdowns, and future roadmap.">
+  <meta property="og:image" content="logo.png">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://caelumcapital.com/models.html">
+  <meta name="twitter:title" content="Our Models - Caelum Capital">
+  <meta name="twitter:description" content="Explore tested trading models built by Caelum Capital including performance data, trade breakdowns, and future roadmap.">
+  <meta name="twitter:image" content="logo.png">
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Caelum Capital","url":"https://caelumcapital.com/","logo":"logo.png","description":"Explore tested trading models built by Caelum Capital including performance data, trade breakdowns, and future roadmap."}</script>
+  <style>html{scroll-behavior:smooth;}body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fff;overflow-x:hidden;}@media(max-width:480px){.container{padding:0 15px;}}</style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html" aria-label="Caelum Capital Home">
+        <img src="logo.png" alt="Caelum Capital logo" class="logo-image" loading="lazy" />
+        <span class="logo-text">CAELUM CAPITAL</span>
+      </a>
+      <div class="nav-links" role="menubar">
+        <a href="index.html#about" role="menuitem">About</a>
+        <a href="models.html" role="menuitem">Models</a>
+        <a href="index.html#strategy" role="menuitem">Strategy</a>
+        <a href="index.html#contact" role="menuitem">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero models-hero" aria-labelledby="models-hero-title">
+      <div class="container">
+        <div class="hero-meta">
+          <span class="chip">CX-01 Live</span>
+        </div>
+        <h1 class="hero-title" id="models-hero-title">Our Models</h1>
+        <p class="hero-subtitle">A timeline of strategies we've built, tested, and improved.</p>
+      </div>
+    </section>
+    <!-- Model Overview -->
+    <section class="model-overview" id="overview" aria-labelledby="overview-title">
+      <div class="container">
+        <div class="overview-header">
+          <h2 id="overview-title">CX-01 — SMA Crossover Strategy</h2>
+        </div>
+        <p id="overview-desc" class="overview-desc">
+          CX-01 is Caelum Capital’s first fully implemented trading model, designed to explore momentum-based trend detection using simple moving average (SMA) crossovers. This strategy tracks two SMAs — one short-term and one long-term — to capture directional market shifts. When the short-term SMA crosses above the long-term SMA, it signals a potential bullish trend, prompting the model to enter a long position. Conversely, when the short-term SMA crosses below, the model exits the trade to preserve capital.
+          <br><br>
+          CX-01 was built to serve as a foundational learning model — testing not just whether the logic works, but how it performs under real historical conditions. The model was validated on over 10 years of SPY (S&P 500 ETF) data, completing 200+ trades. It helped establish core infrastructure for trade execution, position tracking, and signal evaluation — forming the baseline for future model iterations and improvements.
+        </p>
+        <div class="overview-ctas">
+          <a href="#performance" class="btn-solid" id="cta-view-performance" aria-label="View Performance">View Performance</a>
+          <a href="#trade-log" class="btn-outline" id="cta-view-trades" aria-label="View Trade Log">View Trade Log</a>
+        </div>
+      </div>
+    </section>
+    <!-- Model Performance -->
+    <section class="model-performance" id="performance" aria-labelledby="performance-title">
+      <div class="container">
+        <div class="performance-header">
+          <h2 id="performance-title">Performance</h2>
+          <div class="performance-meta">Viewing: <span id="perf-model-code">CX-01</span> <span id="perf-model-status" class="status complete">✅ Completed</span></div>
+        </div>
+        <div class="perf-grid" data-locked="false">
+          <div class="perf-card"><div class="perf-number">200+</div><div class="perf-label">Trades</div><div class="perf-description">Executed across multiple strategies</div></div>
+          <div class="perf-card"><div class="perf-number">80%</div><div class="perf-label">Win Rate</div><div class="perf-description">Profitable trade percentage</div></div>
+          <div class="perf-card"><div class="perf-number">$5.5K</div><div class="perf-label">Profit</div><div class="perf-description">Total simulated returns</div></div>
+          <div class="perf-card"><div class="perf-number">10+</div><div class="perf-label">Years of SPY Data</div><div class="perf-description">Historical market analysis</div></div>
+        </div>
+      </div>
+    </section>
+    <!-- Future Models (Roadmap) -->
+    <section class="future-roadmap" id="future-models" aria-labelledby="future-models-title">
+      <div class="container">
+        <div class="roadmap-intro">
+          <h2 id="future-models-title">Future Models — In Development</h2>
+          <p>Our upcoming models are focused on evolving Caelum Capital from a backtesting project into a live-simulation-ready, data-driven trading operation.</p>
+        </div>
+        <div class="roadmap-grid">
+          <article class="roadmap-card locked">
+            <header><span class="badge">CX-02</span><span class="status">🚧 In Development</span></header>
+            <h3 class="title">Cleaner Signal Logic</h3>
+            <ul class="desc-list">
+              <li>Smarter signal filters</li>
+              <li>Live-simulation infrastructure</li>
+            </ul>
+          </article>
+          <article class="roadmap-card locked">
+            <header><span class="badge">CX-03</span><span class="status">🔬 In Research</span></header>
+            <h3 class="title">Volume & Sentiment Strategy</h3>
+            <ul class="desc-list">
+              <li>Alternative data inputs (volume, sentiment)</li>
+              <li>Adaptive signal weighting</li>
+            </ul>
+          </article>
+          <article class="roadmap-card locked">
+            <header><span class="badge">CX-04</span><span class="status">🧩 Planning Phase</span></header>
+            <h3 class="title">Broker & Risk Tools</h3>
+            <ul class="desc-list">
+              <li>Execution improvements</li>
+              <li>Risk controls & broker API integration</li>
+            </ul>
+          </article>
+        </div>
+        <div class="roadmap-cta"><a href="index.html" class="back-home-button" aria-label="Back to Home">← Back to Home</a></div>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="models.js" defer></script>
+</body>
+</html>
+
+

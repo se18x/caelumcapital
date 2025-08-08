@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://caelumcapital.com/sitemap.xml
