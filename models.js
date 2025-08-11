@@ -51,4 +51,13 @@ document.addEventListener('DOMContentLoaded',function(){try{if(window.AOS){AOS.i
   ready(init);
 })();
 
+function prefersReducedMotion(){ return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches; }
+function observeOnce(el, cb){ const io=new IntersectionObserver((es,o)=>{es.forEach(e=>{if(e.isIntersecting){cb(e.target);o.unobserve(e.target);}})},{threshold:.3}); io.observe(el); }
+function initScrambleOnView(selector){ if(prefersReducedMotion()) return; const rng='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'; document.querySelectorAll(selector).forEach(el=>{ const final=el.getAttribute('data-final')||el.textContent; observeOnce(el,()=>{ const dur=700,t0=performance.now(); (function tick(t){ const p=Math.min((t-t0)/dur,1); el.textContent=[...final].map(ch=>ch===' ' ? ' ' : (Math.random()<(1-p)? rng[(Math.random()*rng.length)|0] : ch)).join(''); if(p<1) requestAnimationFrame(tick); else el.textContent=final; })(t0); }); }); }
+ready(()=>initScrambleOnView('.future-roadmap .title.scramble'));
+
+/* Slot-machine reveal disabled (reverted to original count-up) */
+function slotRevealNumbers(){}
+ready(slotRevealNumbers);
+
 

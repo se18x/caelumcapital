@@ -78,6 +78,8 @@
         </div>
       </div>
     </section>
+    <!-- anchor for CX-1.1 plan target -->
+    <div id="cx11" tabindex="-1" aria-hidden="true"></div>
     <!-- Model Performance -->
     <section class="model-performance" id="performance" aria-labelledby="performance-title">
       <div class="container">
@@ -146,30 +148,45 @@
           <h2 id="future-models-title">Future Models — In Development</h2>
           <p>Our upcoming models are focused on evolving Caelum Capital from a backtesting project into a live-simulation-ready, data-driven trading operation.</p>
         </div>
-        <div class="roadmap-grid">
-          <article class="roadmap-card locked">
-            <header><span class="badge">CX-02</span><span class="status">🚧 In Development</span></header>
-            <h3 class="title">Cleaner Signal Logic</h3>
-            <ul class="desc-list">
-              <li>Smarter signal filters</li>
-              <li>Live-simulation infrastructure</li>
-            </ul>
+        <div class="roadmap-grid" data-io>
+          <!-- CX‑1.1 (Shipping Soon) -->
+          <article class="roadmap-card glass ghost-border">
+            <header>
+              <span class="badge">CX‑1.1</span>
+              <span class="status" aria-label="Status: Shipping Soon">🚀 Shipping Soon</span>
+            </header>
+            <h3 class="title">Profit-Optimized SMA Strategy</h3>
+            <p class="desc" style="margin-top:8px; color: var(--muted);">
+              An upgraded version of our first model that uses smarter trend detection, a 50-day SMA filter, and dynamic capital to aim for bigger gains while protecting profits in volatile markets.
+            </p>
           </article>
-          <article class="roadmap-card locked">
-            <header><span class="badge">CX-03</span><span class="status">🔬 In Research</span></header>
-            <h3 class="title">Volume & Sentiment Strategy</h3>
-            <ul class="desc-list">
-              <li>Alternative data inputs (volume, sentiment)</li>
-              <li>Adaptive signal weighting</li>
-            </ul>
+          <!-- CX‑02 (blurred) -->
+          <article class="roadmap-card glass ghost-border">
+            <header>
+              <span class="badge">CX‑02</span>
+              <span class="status" aria-label="Status: In Research">🧪 In Research</span>
+            </header>
+            <h3 class="title scramble is-blurred" data-final="Signal Cleanup">Signal Cleanup</h3>
+            <div class="future-body is-blurred">
+              <ul class="desc-list">
+                <li>Smoother thresholds & noise reduction</li>
+                <li>Live‑sim hygiene & guardrails</li>
+              </ul>
+            </div>
           </article>
-          <article class="roadmap-card locked">
-            <header><span class="badge">CX-04</span><span class="status">🧩 Planning Phase</span></header>
-            <h3 class="title">Broker & Risk Tools</h3>
-            <ul class="desc-list">
-              <li>Execution improvements</li>
-              <li>Risk controls & broker API integration</li>
-            </ul>
+          <!-- CX‑03 (blurred) -->
+          <article class="roadmap-card glass ghost-border">
+            <header>
+              <span class="badge">CX‑03</span>
+              <span class="status" aria-label="Status: Planning">🔒 Planning</span>
+            </header>
+            <h3 class="title scramble is-blurred" data-final="Volume & Sentiment">Volume & Sentiment</h3>
+            <div class="future-body is-blurred">
+              <ul class="desc-list">
+                <li>Volume & basic sentiment inputs</li>
+                <li>Adaptive signal weighting</li>
+              </ul>
+            </div>
           </article>
         </div>
         <div class="roadmap-cta"><a href="index.html" class="back-home-button" aria-label="Back to Home">← Back to Home</a></div>

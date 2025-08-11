@@ -19,6 +19,7 @@
 /* Buttons: unified system */.btn{display:inline-flex;align-items:center;gap:8px;border-radius:10px;font-weight:600;cursor:pointer;text-decoration:none;border:1.5px solid #111;transition:background-color .2s,color .2s,transform .2s,box-shadow .2s}
 .btn-primary{background:#111;color:#fff}.btn-primary:hover{background:#000;transform:translateY(-1px);box-shadow:0 8px 16px rgba(0,0,0,.12)}
 .btn-outline{background:transparent;color:#111}.btn-outline:hover{background:#111;color:#fff;transform:translateY(-1px)}
+.btn-tag{display:inline-flex;align-items:center;gap:8px;color:var(--text);border:1px solid var(--glass-border);background:rgba(255,255,255,0.06);font-weight:600}
 
 /* Back-compat: map existing buttons to system */.cta-button,.connect-button{border:1.5px solid #111}.cta-button,.connect-button{border-radius:10px}.cta-button{background:#111;color:#fff}.cta-button:hover{background:#000}
 .cta-card-button{border-radius:10px;border:1.5px solid #fff}
@@ -75,5 +76,15 @@
 
 /* Ensure fonts propagate */
 canvas,.trades-table{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+
+/* Future cards blur utility (always blurred, including hover/focus) */
+.is-blurred{filter:blur(6px);opacity:.85;transition:filter .2s ease,opacity .2s ease}
+/* Override any previous hover/focus unblur rules */
+.roadmap-card:hover .is-blurred,
+.roadmap-card:focus-within .is-blurred{filter:blur(6px);opacity:.85}
+@media (prefers-reduced-motion:reduce){.is-blurred{filter:none!important;opacity:1!important}}
+/* Roadmap header alignment */
+.roadmap-card header{display:flex;align-items:baseline;gap:10px;justify-content:space-between}
+@media (max-width:600px){.roadmap-card header{flex-wrap:wrap;align-items:flex-start}}
 
 
