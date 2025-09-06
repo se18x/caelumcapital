@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Models - Caelum Capital</title>
+  <meta name="description" content="Explore tested trading models built by Caelum Capital including performance data, trade breakdowns, and future roadmap.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://caelumcapital.vercel.app/models.html">
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="shortcut icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="models.css" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://caelumcapital.vercel.app/models.html">
+  <meta property="og:title" content="Our Models - Caelum Capital">
+  <meta property="og:description" content="Explore tested trading models built by Caelum Capital including performance data, trade breakdowns, and future roadmap.">
+  <meta property="og:image" content="https://caelumcapital.vercel.app/logo.png">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://caelumcapital.vercel.app/models.html">
+  <meta name="twitter:title" content="Our Models - Caelum Capital">
+  <meta name="twitter:description" content="Explore tested trading models built by Caelum Capital including performance data, trade breakdowns, and future roadmap.">
+  <meta name="twitter:image" content="https://caelumcapital.vercel.app/logo.png">
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Caelum Capital","url":"https://caelumcapital.vercel.app/","logo":"https://caelumcapital.vercel.app/logo.png","description":"Explore tested trading models built by Caelum Capital including performance data, trade breakdowns, and future roadmap."}</script>
+  <style>html{scroll-behavior:smooth;}body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:#1a1a1a;background:#fff;overflow-x:hidden;}@media(max-width:480px){.container{padding:0 15px;}}</style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html" aria-label="Caelum Capital Home">
+        <img src="logo.png" alt="Caelum Capital logo" class="logo-image" width="32" height="32" loading="lazy" />
+        <span class="logo-text">CAELUM CAPITAL</span>
+      </a>
+      <div class="nav-links" role="menubar">
+        <a href="models.html" role="menuitem" aria-current="page">Models</a>
+        <a href="../research/index.html" role="menuitem">Research</a>
+        <a href="../deals/index.html" role="menuitem">Deal Pitches</a>
+        <a href="index.html#contact" role="menuitem">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero models-hero" aria-labelledby="models-hero-title">
+      <div class="container">
+        <div class="hero-meta">
+          <span class="chip">CX-1.1 Live</span>
+        </div>
+        <h1 class="hero-title" id="models-hero-title">Our Models</h1>
+        <p class="hero-subtitle">A timeline of strategies we've built, tested, and improved.</p>
+      </div>
+    </section>
+    <!-- Model Overview -->
+    <section class="model-overview" id="overview" aria-labelledby="overview-title">
+      <div class="container">
+        <div class="overview-header">
+          <h2 id="overview-title">CX-1.1 — Profit-Optimized SMA Strategy</h2>
+        </div>
+        <p id="overview-desc" class="overview-desc">
+          CX-1.1 is Caelum Capital’s second trading model, designed to capture large, long-term market trends through a breakout-driven approach. Unlike CX-01’s frequent trading style, CX-1.1 trades only when broader market conditions confirm a strong bullish environment. The model uses a dual SMA regime filter — requiring the 50-day SMA to remain above the 200-day SMA — to define favorable conditions. Once in a valid regime, CX-1.1 holds a long position until price closes below the 20-day SMA, which acts as a trailing exit signal.
+          <br><br>
+          This design makes CX-1.1 a low-frequency, high-conviction model. Instead of generating hundreds of trades, it focuses on a small number of well-timed entries that can last months or even years. Backtested on over 19 years of SPY (S&P 500 ETF) data, CX-1.1 completed fewer than 20 trades, yet delivered significantly higher average profit per trade compared to CX-01. Beyond raw performance, CX-1.1 also tested the team’s ability to handle extended holding periods, monitor drawdowns, and manage unrealized gains — making it both a benchmark for performance and a case study in the trade-off between patience and activity in systematic strategies.
+        </p>
+        <div class="overview-ctas">
+          <!-- Removed download standard button and peer review button as requested -->
+          <a href="#trade-log" class="btn-outline" id="cta-view-trades" aria-label="View Trade Log">View Trade Log</a>
+        </div>
+      </div>
+    </section>
+    <!-- Model Performance -->
+    <section class="model-performance" id="performance" aria-labelledby="performance-title">
+      <div class="container">
+        <div class="performance-header">
+          <div>
+            <h2 id="performance-title" class="perf-title">Performance</h2>
+          </div>
+        </div>
+        <!-- Original performance cards (restored) -->
+        <div class="perf-grid" data-locked="false">
+          <div class="perf-card"><div class="perf-number">19</div><div class="perf-label">Trades</div><div class="perf-description">Executed across multiple strategies</div></div>
+          <div class="perf-card"><div class="perf-number">77%</div><div class="perf-label">Win Rate</div><div class="perf-description">Profitable trade percentage</div></div>
+          <div class="perf-card"><div class="perf-number">$36.7K</div><div class="perf-label">Profit</div><div class="perf-description">Total simulated returns</div></div>
+          <div class="perf-card"><div class="perf-number">19+</div><div class="perf-label">Years of SPY Data</div><div class="perf-description">Historical market analysis</div></div>
+          <div class="perf-card"><div class="perf-number" id="portfolio-card-value">$46,774.89</div><div class="perf-label">Portfolio Value</div><div class="perf-description"><span class="badge-return positive" id="perf-badge" data-manual="true">+181.41%</span> from $10,000</div></div>
+          <div class="perf-card"><div class="perf-number">$4,086.10</div><div class="perf-label">Average Profit</div><div class="perf-description">Per winning trade</div></div>
+        </div>
+        <!-- Equity chart below cards -->
+        <article class="equity-card glass-card" aria-labelledby="equity-title">
+          <header class="equity-header"><h3 id="equity-title">Portfolio Value Comparison</h3></header>
+          <div class="equity-body">
+            <canvas id="equityChart" height="220" aria-label="Equity curve chart" role="img"></canvas>
+            <div class="equity-fallback" id="equity-fallback" hidden>
+              Unable to load equity data. <a href="/assets/data/SPY-CX1.1-Equity-static.csv" download>Download CX-1.1 CSV</a> | <a href="/assets/data/SPY-SMA20-Equity-static.csv" download>Download SMA-20 CSV</a>
+            </div>
+          </div>
+        </article>
+        <aside class="disclaimer" role="note">
+          <div class="disclaimer-inner">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><circle cx="12" cy="16" r="1"></circle></svg>
+            <p>Backtest results shown are simulated and for educational purposes only. Performance reflects historical data for CX‑1.1 and CX-0. Excludes transaction costs, slippage, and latency. Backtested results are not indicative of future returns and do not constitute investment advice.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <!-- Trades (Backtest Log) -->
+    <section class="trades-log" id="trade-log" aria-labelledby="trades-log-title">
+      <div class="container">
+        <div class="trades-log-card">
+          <div class="trades-log-header">
+            <h2 id="trades-log-title">Trades (Backtest Log)</h2>
+            <div class="trades-log-controls">
+
+              <select id="trades-action-filter" aria-label="Filter by action">
+                <option value="">All Actions</option>
+                <option value="BUY">BUY</option>
+                <option value="SELL">SELL</option>
+              </select>
+              <select id="trades-sort" aria-label="Sort by date">
+                <option value="oldest" selected>Oldest First</option>
+                <option value="newest">Newest First</option>
+              </select>
+            </div>
+          </div>
+          <div id="trades-aria" class="visually-hidden" aria-live="polite"></div>
+          <div id="trades-table" class="trades-table-wrapper" aria-live="polite"></div>
+          <div class="trades-log-footnote">Backtest trade log from CX‑1.1. Results are simulated and exclude transaction costs unless stated.</div>
+        </div>
+      </div>
+    </section>
+    <!-- Future Models (Roadmap) -->
+    <section class="future-roadmap" id="future-models" aria-labelledby="future-models-title">
+        <div class="roadmap-cta"><a href="index.html" class="back-home-button" aria-label="Back to Home">← Back to Home</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" aria-label="Site Footer">
+    <div class="footer-content">
+      <div class="footer-text">© 2025 Caelum Capital — Student-led research project. Not investment advice.</div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="models.js" defer></script>
+</body>
+</html>
